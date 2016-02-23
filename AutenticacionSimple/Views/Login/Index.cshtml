@@ -1,0 +1,19 @@
+﻿@model AutenticacionSimple.Models.Usuario
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@Html.ValidationSummary(false)
+@using (Html.BeginForm()){
+
+@Html.LabelFor(o => o.Login)}
+<br/>
+@Html.EditorFor(o=>o.Login)
+<br/>
+@Html.LabelFor(o => o.Password)}
+<br />
+@Html.PasswordFor(o => o.Password)
+<br/>
+
+<input type="submit" value="OK"/>
